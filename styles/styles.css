@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: seashell;
+}
+body{
+    background-color:#00000efc;
 }
 .max-width{
     margin: auto;
