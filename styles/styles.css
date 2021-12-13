@@ -51,7 +51,6 @@
     display: flex;
     background: url(../imgs/rash2.jpg) no-repeat top;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     color: #fff;
     min-height: 500px;
