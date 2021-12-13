@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 80px;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    /* background-color: crimson; */
+    padding: 30px 0;
+    width: 100%;
+    font-family: sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color:#fff ;
+}
+.navbar .logo span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar .menu a{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+/* Home section styling */
+.home{
+    display: flex;
+    background: url(./imgs/rash2.jpg) no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.text-3 span{
+    font-weight: 500;
+    color: crimson;
+}
