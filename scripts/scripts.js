@@ -6,3 +6,10 @@ document.addEventListener("scroll",(event) => {
         document.querySelector(".navbar").classList.remove("sticky");
     }
 });
+
+let menuBtn =document.querySelector(".menu-btn");
+
+menuBtn.addEventListener("click",(event) => {
+    document.querySelector(".navbar .menu").classList.toggle("active");
+
+});
