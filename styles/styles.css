@@ -16,6 +16,7 @@ body{
 /* navbar styling */
 .navbar{
     position: fixed;
+    z-index: 100;
     padding: 20px 0;
     width: 100%;
     font-family: sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,6 +91,74 @@ body{
     font-weight: 500;
     color: crimson;
 }
+/* about section */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width:180px;
+    height: 3px;
+    bottom:9px;
+    left:50%;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who Am I";
+    position: absolute;
+    font-size: 20px;
+    color: crimson;
+    bottom: 0px;
+    padding:0 5px;
+    left:50%;
+    background-color: #00000efc;
+    transform: translateX(-50%);
+    
+
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left-col{
+    width: 45%;
+}
+.about .about-content .left-col img{
+    width: 350px;
+    height: 380px;
+    object-fit: cover;
+}
+.about .about-content .right-col{
+    width: 55%;
+    text-align: justify;
+}
+.about .about-content .right-col div{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about .about-content .right-col div span{
+    color: crimson;
+}
+.about .about-content .right-col 
+
+
 
 /* media queries */
 @media(max-width:950px){
@@ -112,6 +181,7 @@ body{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease-out;
+    
     }
     .navbar .menu.active{
         right:0;
@@ -119,6 +189,8 @@ body{
 
     .navbar .menu li{
         display: block;
+        margin-left:0 ;
+       
     }
     .navbar .menu li a{
         display: inline-block;
