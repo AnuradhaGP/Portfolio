@@ -151,6 +151,10 @@ body{
     }
     .max-width{
         padding: 0 20px;
+        text-align: center;
+    }
+    .home .max-width{
+        margin: auto;
     }
     
 }
