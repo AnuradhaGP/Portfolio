@@ -152,4 +152,7 @@ body{
     .max-width{
         padding: 0 20px;
     }
+    .home{
+        background: url(../imgs/hero.jpg) no-repeat right;
+    }
 }
