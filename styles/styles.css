@@ -13,6 +13,8 @@ body{
     max-width: 1300px;
     padding: 0 80px;
 }
+
+/* -------------------------------------------------- */
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -55,7 +57,7 @@ body{
     transition: color 0.3s ease;
 }
 
-
+/* ----------------------------------------------------- */
 /* Home section styling */
 .home{
     display: flex;
@@ -91,17 +93,15 @@ body{
     font-weight: 500;
     color: crimson;
 }
-/* about section */
+/* ----------------------------------------------------- */
+
+/* common section styles */
 section{
     padding: 100px 0 50px 0;
     
+    
 }
-.about{
-    margin:0 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -110,7 +110,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     width:180px;
@@ -120,8 +120,8 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who Am I";
+section .title::after{
+    
     position: absolute;
     font-size: 20px;
     color: crimson;
@@ -131,9 +131,20 @@ section{
     background-color: #00000efc;
     transform: translateX(-50%);
     
+}
+
+/* ----------------------------------------------------- */
+/* about section */
+
+.about,.services{
+    margin:0 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-.about .about-content{
+.about .title::after{
+    content: "Who Am I";
+}
+section .about-content,.serv-content{
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +168,7 @@ section{
     text-align: justify;
 }
 .about .about-content .right-col div{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 .about .about-content .right-col div span{
@@ -184,8 +195,48 @@ section{
     color: crimson;
     
 }
+/* ----------------------------------------------------------- */
+/* Services  */
+.services{
+    background: #111;
+    margin:0;
+}
 
+.services .title::after{
+    content: "What I Do";
+    background: #111;
+}
+.serv-content .card{
+    width:calc(25% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+    height: 250px;
+    
+}
+.serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+.serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0;
+}
+.serv-content .card:hover{
+    background: crimson;
+}
+.serv-content .card:hover i{
+    color: #fff;
+}
 
+.serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+/* ---------------------------------------------------------- */
 /* media queries */
 @media(max-width:1030px){
     .max-width{
