@@ -98,8 +98,6 @@ body{
 /* common section styles */
 section{
     padding: 100px 0 50px 0;
-    
-    
 }
 section .title{
     position: relative;
@@ -115,7 +113,7 @@ section .title::before{
     position: absolute;
     width:180px;
     height: 3px;
-    bottom:9px;
+    bottom:4px;
     left:50%;
     background: #fff;
     transform: translateX(-50%);
@@ -125,18 +123,17 @@ section .title::after{
     position: absolute;
     font-size: 20px;
     color: crimson;
-    bottom: 0px;
+    bottom: -5px;
     padding:0 5px;
     left:50%;
     background-color: #00000efc;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%); 
 }
 
 /* ----------------------------------------------------- */
 /* about section */
 
-.about,.services{
+.about,.services,.skills{
     margin:0 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -144,7 +141,7 @@ section .title::after{
 .about .title::after{
     content: "Who Am I";
 }
-section .about-content,.serv-content{
+section .about-content,.serv-content,.skill-content{
     box-sizing: border-box; 
     display: flex;
     flex-wrap: wrap;
@@ -160,8 +157,6 @@ section .about-content,.serv-content{
     object-fit: cover;
     border:crimson solid 4px
 }
-
-
 .about .about-content .right-col{
     width: 55%;
     text-align: justify;
@@ -182,8 +177,7 @@ section .about-content,.serv-content{
     border:crimson 4px solid;
     border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s ease-out;
-    
+    transition: all 0.3s ease-out;  
 }
 .about .about-content .right-col a:hover {
     background:none;
@@ -192,15 +186,14 @@ section .about-content,.serv-content{
     border-radius: 5px;
     font-weight: bold;
     color: crimson;
-    
 }
 /* ----------------------------------------------------------- */
 /* Services  */
 .services{
     background: #111;
     margin:0;
+    padding-bottom: 120px;
 }
-
 .services .title::after{
     content: "What I Provide";
     background: #111;
@@ -232,9 +225,74 @@ section .about-content,.serv-content{
 .serv-content .card:hover i{
     color: #fff;
 }
-
 .serv-content .card:hover .box{
     transform: scale(1.05);
+}
+/* ------------------------------------------------------ */
+/* Skills */
+.skills .title::after{
+    content: "What I Know";
+    background: #00000efc;
+}
+.skills .skill-content .right-col{
+    width: calc(50% - 30px);
+}
+.skills .skill-content .left-col{
+    width: calc(50% - 30px);
+}
+.skills .skill-content .left-col div{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skill-content .left-col p{
+    text-align: justify;
+}
+.skills .skill-content .right-col .bars{
+    margin-bottom: 15px;
+}
+.skills .skill-content .right-col .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skill-content .right-col .line{
+    height: 7px;
+    width: 100%;
+    background: lightblue;
+    position: relative;
+}
+.skills .skill-content .right-col .line::before{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 90%;
+    background: crimson;
+}
+.skills .skill-content .right-col .html::before{
+    width: 90%;
+}
+.skills .skill-content .right-col .css::before{
+    width: 80%;
+}
+.skills .skill-content .right-col .js::before{
+    width: 60%;
+}
+.skills .skill-content .right-col .java::before{
+    width: 70%;
+}
+.skills .skill-content .right-col .python::before{
+    width: 80%;
+}
+.skills .skill-content .right-col .sql::before{
+    width: 70%;
+}
+.skills .skill-content .right-col .mongo::before{
+    width: 60%;
+}
+.skills .skill-content .right-col .cs::before{
+    width: 50%;
 }
 
 /* ---------------------------------------------------------- */
@@ -337,4 +395,15 @@ section .about-content,.serv-content{
     section .title::after{
         font-size: 16px;
     }
+}
+@media(max-width:760px){
+    .skills .skill-content .right-col{
+        width:100%;
+    }
+    .skills .skill-content .left-col{
+        width:100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
 }
