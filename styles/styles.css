@@ -145,7 +145,7 @@ section .title::after{
     content: "Who Am I";
 }
 section .about-content,.serv-content{
-    box-sizing: border-box;
+    box-sizing: border-box; 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -155,7 +155,6 @@ section .about-content,.serv-content{
     width: 45%;
 }
 .about .about-content .left-col img{
-    position: relative;
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -203,18 +202,20 @@ section .about-content,.serv-content{
 }
 
 .services .title::after{
-    content: "What I Do";
+    content: "What I Provide";
     background: #111;
 }
+.serv-content{
+    align-items: stretch;
+}
 .serv-content .card{
-    width:calc(25% - 20px);
+    width: calc(25% - 20px);
     background: #222;
     text-align: center;
     border-radius: 5px;
     padding: 20px 25px;
     cursor: pointer;
-    height: 250px;
-    
+    margin-bottom: 20px;
 }
 .serv-content .card i{
     font-size: 50px;
@@ -246,6 +247,9 @@ section .about-content,.serv-content{
         width: 300px;
         height: 300px;
         
+    }
+    .serv-content .card{
+        width: calc(50% - 20px);      
     }
 }
 @media(max-width:953px){
@@ -324,5 +328,13 @@ section .about-content,.serv-content{
     .home .max-width{
         margin: auto;
     }
+    .serv-content .card{
+        width: 100%;
+    }
     
+}
+@media(max-width:336px){
+    section .title::after{
+        font-size: 16px;
+    }
 }
