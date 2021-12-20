@@ -13,3 +13,11 @@ menuBtn.addEventListener("click",(event) => {
     document.querySelector(".navbar .menu").classList.toggle("active");
 
 });
+
+let navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((item)=>{
+    item.addEventListener("click",(event)=>{
+        document.querySelector(".navbar .menu").classList.remove("active");
+    });
+});
