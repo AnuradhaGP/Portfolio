@@ -43,7 +43,7 @@ body{
     color:#fff ;
 }
 .navbar .logo span{
-    color: crimson;
+    color: #0792c0;
 }
 .navbar .menu li{
     list-style: none;
@@ -53,7 +53,7 @@ body{
     margin-left: 25px;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #0792c0;
 }
 .navbar .menu a{
     
@@ -95,7 +95,7 @@ body{
 }
 .text-3 span{
     font-weight: 500;
-    color: crimson;
+    color: #0792c0;
 }
 /* ----------------------------------------------------- */
 
@@ -126,7 +126,7 @@ section .title::after{
     
     position: absolute;
     font-size: 20px;
-    color: crimson;
+    color: #0792c0;
     bottom: -5px;
     padding:0 5px;
     left:50%;
@@ -148,7 +148,7 @@ section .title::after{
     margin:10px 0;
 }
 .card:hover{
-    background: crimson;
+    background: #0792c0;
 }
 .card:hover .box i{
     color: #fff;
@@ -182,7 +182,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     width: 400px;
     height: 400px;
     object-fit: cover;
-    border:crimson solid 4px
+    border:#0792c0 solid 4px
 }
 .about .about-content .right-col{
     width: 55%;
@@ -193,15 +193,15 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     margin-bottom: 10px;
 }
 .about .about-content .right-col div span{
-    color: crimson;
+    color: #0792c0;
 }
 .about .about-content .right-col p{
     margin-bottom: 30px;
 }
 .about .about-content .right-col a {
-    background: crimson;
+    background: #0792c0;
     padding:10px 20px;
-    border:crimson 4px solid;
+    border:#0792c0 4px solid;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease-out;  
@@ -209,10 +209,10 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .about .about-content .right-col a:hover {
     background:none;
     padding:10px 20px;
-    border:crimson 4px solid;
+    border:#0792c0 4px solid;
     border-radius: 5px;
     font-weight: bold;
-    color: crimson;
+    color: #0792c0;
 }
 /* ----------------------------------------------------------- */
 /* Services  */
@@ -231,7 +231,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 
 .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #0792c0;
 }
 
 /* ------------------------------------------------------ */
@@ -278,7 +278,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     height: 7px;
     width: 90%;
     left: 0;
-    background: crimson;
+    background: #0792c0;
 }
 .skills .skill-content .right-col .html::before{
     width: 90%;
@@ -324,7 +324,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .blog-content .card:hover{
     background: #222;
-    border: 4px solid crimson;
+    border: 4px solid #0792c0;
 }
 .blog-content .card .box{
     padding-bottom: 20px;
@@ -335,9 +335,9 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 
 .blog-content a{
-    background: crimson;
+    background: #0792c0;
     padding:10px 20px;
-    border:crimson 4px solid;
+    border:#0792c0 4px solid;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease-out; 
@@ -345,10 +345,10 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .blog-content a:hover{
     background:none;
     padding:10px 20px;
-    border:crimson 4px solid;
+    border:#0792c0 4px solid;
     border-radius: 5px;
     font-weight: bold;
-    color: crimson;
+    color: #0792c0;
 }
 /* ------------------------------------------------------------------ */
 /* contact section */
@@ -369,7 +369,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .contact .contact-content .left-col .raw i{
     font-size: 30px;
-    color: crimson;
+    color: #0792c0;
     margin-right: 30px;
 }
 .contact .contact-content .right-col input[type="submit"]{
@@ -397,7 +397,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     border-radius: 5px;
     border: none;
     align-content: center;
-    outline-color: crimson;
+    outline-color: #0792c0;
 }
 /* ---------------------------------------------------------------- */
 /* footer */
@@ -413,7 +413,7 @@ footer div{
     font-weight: 700;
 }
 footer span{
-    color: crimson;
+    color: #0792c0;
 }
 .social a{
     margin-left: 20px;
