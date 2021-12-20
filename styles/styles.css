@@ -5,6 +5,9 @@
     text-decoration: none;
     color: seashell;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:#00000efc;
 }
@@ -215,7 +218,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .services{
     background: #111;
     margin:0;
-    padding-bottom: 120px;
+    padding-bottom: 170px;
 }
 .services .title::after{
     content: "What I Provide";
@@ -232,6 +235,9 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 
 /* ------------------------------------------------------ */
 /* Skills */
+.skills{
+    padding-bottom: 100px;
+}
 .skills .title::after{
     content: "What I Know";
     background: #00000efc;
@@ -302,7 +308,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .blog{
     background: #111;
     margin:0;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
 }
 .blog .title::after{
     content: "for Knowledge";
