@@ -146,7 +146,7 @@ section .title::after{
 .card:hover{
     background: crimson;
 }
-.card:hover i{
+.card:hover .box i{
     color: #fff;
 }
 .card:hover .box{
@@ -156,7 +156,7 @@ section .title::after{
 /* ----------------------------------------------------- */
 /* about section */
 
-.about,.services,.skills,.blog{
+.about,.services,.skills,.blog,.contact{
     margin:0 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -164,7 +164,7 @@ section .title::after{
 .about .title::after{
     content: "Who Am I";
 }
-section .about-content,.serv-content,.skill-content,.blog-content{
+section .about-content,.serv-content,.skill-content,.blog-content,.contact-content{
     box-sizing: border-box; 
     display: flex;
     flex-wrap: wrap;
@@ -343,6 +343,81 @@ section .about-content,.serv-content,.skill-content,.blog-content{
     font-weight: bold;
     color: crimson;
 }
+/* ------------------------------------------------------------------ */
+/* contact section */
+.contact .contact-content .left-col{
+    width: 50%;
+}
+.contact .contact-content .right-col{
+    width: 50%;
+    
+}
+.contact .title::after{
+    content: "Get in touch";
+    background: #00000efc;
+}
+.contact .contact-content .left-col .raw{
+    margin-bottom: 35px;
+    display: flex;
+}
+.contact .contact-content .left-col .raw i{
+    font-size: 30px;
+    color: crimson;
+    margin-right: 30px;
+}
+.contact .contact-content .right-col input[type="submit"]{
+    padding: 10px 8px;
+    color: #fff;
+    font-weight: 700;
+    background: #0792c0;
+    border:#0792c0 solid 3px ;
+    border-radius: 5px;
+}
+.contact .contact-content .right-col input[type="submit"]:hover{
+    background: none ;
+    color: #0792c0;
+}
+.contact .contact-content .right-col input[type="submit"]:active{
+    background: none ;
+    color: #fff;
+    border-color: #fff;
+}
+.contact .contact-content .right-col form input,textarea{
+    display:block;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    align-content: center;
+    outline-color: crimson;
+}
+/* ---------------------------------------------------------------- */
+/* footer */
+footer{
+    background: #111;
+    height: 100px;
+    padding: 30px 50px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer div{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+footer span{
+    color: crimson;
+}
+.social a{
+    margin-left: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.social a:hover i{
+    color: #0792c0;
+}
+
+
 
 /* ---------------------------------------------------------- */
 /* media queries */
@@ -456,5 +531,12 @@ section .about-content,.serv-content,.skill-content,.blog-content{
     }
     .blog-content .card{
         width:100%;
+    }
+    .contact .contact-content .left-col{
+        width: 100%;
+    }
+    .contact .contact-content .right-col{
+        width: 100%;
+        
     }
 }
