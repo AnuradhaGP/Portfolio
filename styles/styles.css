@@ -5,6 +5,9 @@
     text-decoration: none;
     color: seashell;
 }
+:root{
+    --colorTheam:#0099ff;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -16,6 +19,8 @@ body{
     max-width: 1300px;
     padding: 0 80px;
 }
+/* type animation */
+
 
 /* -------------------------------------------------- */
 /* navbar styling */
@@ -43,7 +48,7 @@ body{
     color:#fff ;
 }
 .navbar .logo span{
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 .navbar .menu li{
     list-style: none;
@@ -53,7 +58,7 @@ body{
     margin-left: 25px;
 }
 .navbar .menu li a:hover{
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 .navbar .menu a{
     
@@ -95,7 +100,7 @@ body{
 }
 .text-3 span{
     font-weight: 500;
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 /* ----------------------------------------------------- */
 
@@ -126,7 +131,7 @@ section .title::after{
     
     position: absolute;
     font-size: 20px;
-    color: #0792c0;
+    color: var(--colorTheam);
     bottom: -5px;
     padding:0 5px;
     left:50%;
@@ -148,7 +153,7 @@ section .title::after{
     margin:10px 0;
 }
 .card:hover{
-    background: #0792c0;
+    background: var(--colorTheam);
 }
 .card:hover .box i{
     color: #fff;
@@ -182,7 +187,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     width: 400px;
     height: 400px;
     object-fit: cover;
-    border:#0792c0 solid 4px
+    border:var(--colorTheam) solid 4px
 }
 .about .about-content .right-col{
     width: 55%;
@@ -193,15 +198,15 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     margin-bottom: 10px;
 }
 .about .about-content .right-col div span{
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 .about .about-content .right-col p{
     margin-bottom: 30px;
 }
 .about .about-content .right-col a {
-    background: #0792c0;
+    background: var(--colorTheam);
     padding:10px 20px;
-    border:#0792c0 4px solid;
+    border:var(--colorTheam) 4px solid;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease-out;  
@@ -209,10 +214,10 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .about .about-content .right-col a:hover {
     background:none;
     padding:10px 20px;
-    border:#0792c0 4px solid;
+    border:var(--colorTheam) 4px solid;
     border-radius: 5px;
     font-weight: bold;
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 /* ----------------------------------------------------------- */
 /* Services  */
@@ -231,7 +236,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 
 .serv-content .card i{
     font-size: 50px;
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 
 /* ------------------------------------------------------ */
@@ -269,7 +274,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .skills .skill-content .right-col .line{
     height: 7px;
     width: 100%;
-    background: lightblue;
+    background: rgb(34, 43, 46);
     position: relative;
 }
 .skills .skill-content .right-col .line::before{
@@ -278,7 +283,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     height: 7px;
     width: 90%;
     left: 0;
-    background: #0792c0;
+    background: var(--colorTheam);
 }
 .skills .skill-content .right-col .html::before{
     width: 90%;
@@ -324,7 +329,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .blog-content .card:hover{
     background: #222;
-    border: 4px solid #0792c0;
+    border: 4px solid var(--colorTheam);
 }
 .blog-content .card .box{
     padding-bottom: 20px;
@@ -335,9 +340,9 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 
 .blog-content a{
-    background: #0792c0;
+    background: var(--colorTheam);
     padding:10px 20px;
-    border:#0792c0 4px solid;
+    border:var(--colorTheam) 4px solid;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease-out; 
@@ -345,10 +350,10 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 .blog-content a:hover{
     background:none;
     padding:10px 20px;
-    border:#0792c0 4px solid;
+    border:var(--colorTheam) 4px solid;
     border-radius: 5px;
     font-weight: bold;
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 /* ------------------------------------------------------------------ */
 /* contact section */
@@ -369,20 +374,20 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .contact .contact-content .left-col .raw i{
     font-size: 30px;
-    color: #0792c0;
+    color: var(--colorTheam);
     margin-right: 30px;
 }
 .contact .contact-content .right-col input[type="submit"]{
     padding: 10px 8px;
     color: #fff;
     font-weight: 700;
-    background: #0792c0;
-    border:#0792c0 solid 3px ;
+    background: var(--colorTheam);
+    border:var(--colorTheam) solid 3px ;
     border-radius: 5px;
 }
 .contact .contact-content .right-col input[type="submit"]:hover{
     background: none ;
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 .contact .contact-content .right-col input[type="submit"]:active{
     background: none ;
@@ -397,7 +402,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     border-radius: 5px;
     border: none;
     align-content: center;
-    outline-color: #0792c0;
+    outline-color: var(--colorTheam);
 }
 /* ---------------------------------------------------------------- */
 /* footer */
@@ -413,7 +418,7 @@ footer div{
     font-weight: 700;
 }
 footer span{
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 .social a{
     margin-left: 20px;
@@ -421,7 +426,7 @@ footer span{
     transition: all 0.3s ease-in-out;
 }
 .social a:hover i{
-    color: #0792c0;
+    color: var(--colorTheam);
 }
 
 

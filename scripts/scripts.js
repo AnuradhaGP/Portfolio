@@ -1,3 +1,4 @@
+//show and hide nav bar background
 document.addEventListener("scroll",(event) => {
     if(this.scrollY> 20){
         document.querySelector(".navbar").classList.add("sticky");
@@ -6,7 +7,7 @@ document.addEventListener("scroll",(event) => {
         document.querySelector(".navbar").classList.remove("sticky");
     }
 });
-
+// menu button
 let menuBtn =document.querySelector(".menu-btn");
 
 menuBtn.addEventListener("click",(event) => {
@@ -14,6 +15,7 @@ menuBtn.addEventListener("click",(event) => {
 
 });
 
+// close menu section when click any link
 let navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((item)=>{
@@ -21,3 +23,22 @@ navLink.forEach((item)=>{
         document.querySelector(".navbar .menu").classList.remove("active");
     });
 });
+
+//type animation
+// let words =["Programmer","Designer","Free Lancer"];
+
+//     // for(let i =0; i<words.length;i++){ 
+//     //     setInterval(function(){
+//     //         console.log(words[i]);
+//     //     },5000);
+        
+//         // document.querySelector(".type").innerHTML= words[i];
+//     };
+
+   
+
+   
+    
+
+
+
