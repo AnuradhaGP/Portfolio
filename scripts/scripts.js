@@ -24,16 +24,6 @@ navLink.forEach((item)=>{
     });
 });
 
-//type animation
-// let words =["Programmer","Designer","Free Lancer"];
-
-//     // for(let i =0; i<words.length;i++){ 
-//     //     setInterval(function(){
-//     //         console.log(words[i]);
-//     //     },5000);
-        
-//         // document.querySelector(".type").innerHTML= words[i];
-//     };
 
    
 

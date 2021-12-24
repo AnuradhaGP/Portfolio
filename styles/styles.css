@@ -146,15 +146,14 @@ section .title::after{
     padding: 20px 25px;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 .card .text{
     font-size: 25px;
     font-weight: 500;
     margin:10px 0;
 }
-.card:hover{
-    background: var(--colorTheam);
-}
+
 .card:hover .box i{
     color: #fff;
 }
@@ -219,6 +218,7 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
     font-weight: bold;
     color: var(--colorTheam);
 }
+
 /* ----------------------------------------------------------- */
 /* Services  */
 .services{
@@ -232,6 +232,9 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .serv-content{
     align-items: stretch;
+}
+.services .card:hover{
+    background: var(--colorTheam);
 }
 
 .serv-content .card i{
@@ -322,18 +325,31 @@ section .about-content,.serv-content,.skill-content,.blog-content,.contact-conte
 }
 .blog-content{
     margin: 0 20px;
+    align-items: stretch;
 }
 .blog-content .card{
     width:calc(50% - 20px);
     transition: all 0.3s ease-in;
+    
 }
+.card-1{
+    background: url(../imgs/images.png);
+    background-size: cover;
+}
+.card-2{
+    background: url(../imgs/download.png);
+    background-size: cover;
+}
+
 .blog-content .card:hover{
-    background: #222;
     border: 4px solid var(--colorTheam);
 }
 .blog-content .card .box{
-    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 80%);
+    border-radius: 5px;
+    padding: 20px;
     transition: all 0.3s ease-in;
+    margin: 10px;
 }
 .blog-content p{
     margin-bottom: 20px;
